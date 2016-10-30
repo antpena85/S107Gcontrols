@@ -10,15 +10,12 @@ import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
 
-/*
-need to work out the switching of channels system
- */
 
 public class MiniHelicopter_Controls extends Activity implements SeekBar.OnSeekBarChangeListener {
 
     public volatile  int[] pattern = new int[67];
 
-    ConsumerIrManager mCIR;
+    ConsumerIrManager mCIR;  //need to change this to handle different vendors as vendors now use their own wrapper class.
     SeekBar yawControl, pitchControl, throttleControl, trimControl;
     TextView yawDisplay, pitchDisplay, throttleDisplay, trimDisplay;
     //Switch sw;
@@ -156,24 +153,7 @@ public class MiniHelicopter_Controls extends Activity implements SeekBar.OnSeekB
     }
     @Override
     public void onProgressChanged(SeekBar seekBar, final int progress, boolean b) {
-//        new Thread(new Send()).start();
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                try{
-//                    while (throttleControl.getProgress()>0){
-//
-//                    pulses(yawControl.getProgress(), pitchControl.getProgress(), throttleControl.getProgress() ,trimControl.getProgress());
-//                    Thread.sleep(progress);
-//
-//
-//                    }
-//                }catch (InterruptedException e){
-//                e.printStackTrace();
-//                }
-//                Thread.interrupted();
-//            }
-//        }).start();
+        //TODO: need to correct contactination warnings
         yawDisplay.setText("YAW " + yawControl.getProgress());
         pitchDisplay.setText("PITCH " + pitchControl.getProgress());
         throttleDisplay.setText("THROTTLE " + throttleControl.getProgress());
@@ -190,28 +170,13 @@ public class MiniHelicopter_Controls extends Activity implements SeekBar.OnSeekB
     public void onStopTrackingTouch(SeekBar seekBar)
     {
         new Thread(new Send()).start();
-////           new Thread(new Runnable() {
-////            @Override
-////            public void run() {
-////                try{
-////                    while (throttleControl.getProgress()>0)
-////                        mCIR.transmit(38000,pulses(yawControl.getProgress(), pitchControl.getProgress(), throttleControl.getProgress() ,trimControl.getProgress()));
-////                }catch (Exception e){
-////                    e.printStackTrace();
-////                }
-////            }
-////        }).start();
+        //TODO: need to correct contactination warnings
         yawDisplay.setText("YAW " + yawControl.getProgress());
         pitchDisplay.setText("PITCH " + pitchControl.getProgress());
         throttleDisplay.setText("THROTTLE " + throttleControl.getProgress());
         trimDisplay.setText("TRIM " +    trimControl.getProgress());
         yawControl.setProgress(63);
         pitchControl.setProgress(63);
-
-
-//        yawDisplay.setText("YAW " + yawControl.getProgress());
-//        pitchDisplay.setText("PITCH " + pitchControl.getProgress());
-
 
     }
 
