@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Antonio\AndroidStudioProjects\S107Gcontrols\syma\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="C:\Users\Antonio\AndroidStudioProjects\S107Gcontrols\syma\build\intermediates\pre-dexed\debug\classes-3f00c7b24c0dd98379e80d91f2d013fa37852004.jar" />
+    </item>
+    <item
+        jar="C:\Users\Antonio\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Antonio\AndroidStudioProjects\S107Gcontrols\syma\build\intermediates\pre-dexed\debug\support-v4-19.1.0-2575f4531738f82a870366bcdf52d96d7e7eecc0.jar" />
+    </item>
+
+</items>

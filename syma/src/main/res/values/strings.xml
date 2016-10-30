@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">S107Gcontrols</string>
+    <string name="action_settings">Settings</string>
+    <string name="Yaw">YAW</string>
+    <string name="Left">LEFT</string>
+    <string name="Right">RIGHT</string>
+    <string name="Pitch">PITCH</string>
+    <string name="Forward">FORWARD</string>
+    <string name="Back">BACK</string>
+    <string name="Throttle">THROTTLE</string>
+    <string name="Trim">TRIM</string>
+    <string name="Version">Version 0.5</string>
+    <string name="channel">Channel</string>
+    <string name="switchOn">A</string>
+    <string name="switchOff">B</string>
+
+
+
+</resources>
